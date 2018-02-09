@@ -168,196 +168,185 @@ registerOnClick("STOP", function() {
   operateAnimation("STOP", "Empty", null, null, 1, function() {});
 });
 
-registerOnClick("clavicle", function() {
+registerOnClick("ulna", function() {
   var i_list = ["clavicle", "cranium", "femur", "fibula", "humerus", "mandible", "patela", "radius", "ribs", "scapula", "spine", "sternum", "tibia", "ulna", "sub02001"];
   for (var i_index in i_list) {
     i = i_list[i_index];
   if (--_puzzleVars.loopTrap == 0) throw "Puzzles: infinite loop.";
     assignMat(["clavicle", "cranium", "femur", "fibula", "humerus", "mandible", "patela", "radius", "ribs", "scapula", "spine", "sternum", "tibia", "ulna", "sub02001"], "White___Vray");
   }
-  assignMat("clavicle", "highlight");
-  updateTextObj("Text", 'clavicle');
-  tweenCamera('', "clavicle", 0.5);
+  assignMat("ulna", "highlight");
+  updateTextObj("Text", 'ulna');
+  updateTextObj("datails", 'together with the radius, the ulna enables the wrist joint to rotate');
 });
 
-registerOnClick("ulna", function() {
+registerOnClick("tibia", function() {
   var i_list2 = ["clavicle", "cranium", "femur", "fibula", "humerus", "mandible", "patela", "radius", "ribs", "scapula", "spine", "sternum", "tibia", "ulna", "sub02001"];
   for (var i_index2 in i_list2) {
     i = i_list2[i_index2];
   if (--_puzzleVars.loopTrap == 0) throw "Puzzles: infinite loop.";
     assignMat(["clavicle", "cranium", "femur", "fibula", "humerus", "mandible", "patela", "radius", "ribs", "scapula", "spine", "sternum", "tibia", "ulna", "sub02001"], "White___Vray");
   }
-  assignMat("ulna", "highlight");
-  updateTextObj("Text", 'ulna');
-  tweenCamera('', "ulna", 0.5);
+  assignMat("tibia", "highlight");
+  updateTextObj("Text", 'tibia');
+  updateTextObj("datails", 'Many powerful muscles that move the foot and lower leg are anchored to the tibia');
 });
 
-registerOnClick("tibia", function() {
+registerOnClick("sternum", function() {
   var i_list3 = ["clavicle", "cranium", "femur", "fibula", "humerus", "mandible", "patela", "radius", "ribs", "scapula", "spine", "sternum", "tibia", "ulna", "sub02001"];
   for (var i_index3 in i_list3) {
     i = i_list3[i_index3];
   if (--_puzzleVars.loopTrap == 0) throw "Puzzles: infinite loop.";
     assignMat(["clavicle", "cranium", "femur", "fibula", "humerus", "mandible", "patela", "radius", "ribs", "scapula", "spine", "sternum", "tibia", "ulna", "sub02001"], "White___Vray");
   }
-  assignMat("tibia", "highlight");
-  updateTextObj("Text", 'tibia');
-  tweenCamera('', "tibia", 0.5);
+  assignMat("sternum", "highlight");
+  updateTextObj("Text", 'sternum');
+  updateTextObj("datails", 'protects the heart, lungs, and blood vessels from physical damage');
 });
 
-registerOnClick("sternum", function() {
+registerOnClick("spine", function() {
   var i_list4 = ["clavicle", "cranium", "femur", "fibula", "humerus", "mandible", "patela", "radius", "ribs", "scapula", "spine", "sternum", "tibia", "ulna", "sub02001"];
   for (var i_index4 in i_list4) {
     i = i_list4[i_index4];
   if (--_puzzleVars.loopTrap == 0) throw "Puzzles: infinite loop.";
     assignMat(["clavicle", "cranium", "femur", "fibula", "humerus", "mandible", "patela", "radius", "ribs", "scapula", "spine", "sternum", "tibia", "ulna", "sub02001"], "White___Vray");
   }
-  assignMat("sternum", "highlight");
-  updateTextObj("Text", 'sternum');
-  tweenCamera('', "sternum", 0.5);
+  assignMat("spine", "highlight");
+  updateTextObj("Text", 'spine');
+  updateTextObj("datails", 'designed to protect your spinal cord');
 });
 
-registerOnClick("spine", function() {
+registerOnClick("scapula", function() {
   var i_list5 = ["clavicle", "cranium", "femur", "fibula", "humerus", "mandible", "patela", "radius", "ribs", "scapula", "spine", "sternum", "tibia", "ulna", "sub02001"];
   for (var i_index5 in i_list5) {
     i = i_list5[i_index5];
   if (--_puzzleVars.loopTrap == 0) throw "Puzzles: infinite loop.";
     assignMat(["clavicle", "cranium", "femur", "fibula", "humerus", "mandible", "patela", "radius", "ribs", "scapula", "spine", "sternum", "tibia", "ulna", "sub02001"], "White___Vray");
   }
-  assignMat("spine", "highlight");
-  updateTextObj("Text", 'spine');
-  tweenCamera('', "spine", 0.5);
+  assignMat("scapula", "highlight");
+  updateTextObj("Text", 'scapula');
+  updateTextObj("datails", 'attach the upper arm to the thorax, or trunk of the body');
 });
 
-registerOnClick("scapula", function() {
+registerOnClick("ribs", function() {
   var i_list6 = ["clavicle", "cranium", "femur", "fibula", "humerus", "mandible", "patela", "radius", "ribs", "scapula", "spine", "sternum", "tibia", "ulna", "sub02001"];
   for (var i_index6 in i_list6) {
     i = i_list6[i_index6];
   if (--_puzzleVars.loopTrap == 0) throw "Puzzles: infinite loop.";
     assignMat(["clavicle", "cranium", "femur", "fibula", "humerus", "mandible", "patela", "radius", "ribs", "scapula", "spine", "sternum", "tibia", "ulna", "sub02001"], "White___Vray");
   }
-  assignMat("scapula", "highlight");
-  updateTextObj("Text", 'scapula');
-  tweenCamera('', "scapula", 0.5);
+  assignMat("ribs", "highlight");
+  updateTextObj("Text", 'ribs');
+  updateTextObj("datails", 'protects the organs in the chest cavity');
 });
 
-registerOnClick("ribs", function() {
+registerOnClick("radius", function() {
   var i_list7 = ["clavicle", "cranium", "femur", "fibula", "humerus", "mandible", "patela", "radius", "ribs", "scapula", "spine", "sternum", "tibia", "ulna", "sub02001"];
   for (var i_index7 in i_list7) {
     i = i_list7[i_index7];
   if (--_puzzleVars.loopTrap == 0) throw "Puzzles: infinite loop.";
     assignMat(["clavicle", "cranium", "femur", "fibula", "humerus", "mandible", "patela", "radius", "ribs", "scapula", "spine", "sternum", "tibia", "ulna", "sub02001"], "White___Vray");
   }
-  assignMat("ribs", "highlight");
-  updateTextObj("Text", 'ribs');
-  tweenCamera('', "ribs", 0.5);
+  assignMat("radius", "highlight");
+  updateTextObj("Text", 'radius');
+  updateTextObj("datails", 'plays a vital role in how the forearm rotates');
 });
 
-registerOnClick("radius", function() {
+registerOnClick("patela", function() {
   var i_list8 = ["clavicle", "cranium", "femur", "fibula", "humerus", "mandible", "patela", "radius", "ribs", "scapula", "spine", "sternum", "tibia", "ulna", "sub02001"];
   for (var i_index8 in i_list8) {
     i = i_list8[i_index8];
   if (--_puzzleVars.loopTrap == 0) throw "Puzzles: infinite loop.";
     assignMat(["clavicle", "cranium", "femur", "fibula", "humerus", "mandible", "patela", "radius", "ribs", "scapula", "spine", "sternum", "tibia", "ulna", "sub02001"], "White___Vray");
   }
-  assignMat("radius", "highlight");
-  updateTextObj("Text", 'radius');
-  tweenCamera('', "radius", 0.5);
+  assignMat("patela", "highlight");
+  updateTextObj("Text", 'patela');
+  updateTextObj("datails", 'increases the leverage that the tendon can exert on the femur by increasing the angle at which it acts.');
 });
 
-registerOnClick("patela", function() {
+registerOnClick("mandible", function() {
   var i_list9 = ["clavicle", "cranium", "femur", "fibula", "humerus", "mandible", "patela", "radius", "ribs", "scapula", "spine", "sternum", "tibia", "ulna", "sub02001"];
   for (var i_index9 in i_list9) {
     i = i_list9[i_index9];
   if (--_puzzleVars.loopTrap == 0) throw "Puzzles: infinite loop.";
     assignMat(["clavicle", "cranium", "femur", "fibula", "humerus", "mandible", "patela", "radius", "ribs", "scapula", "spine", "sternum", "tibia", "ulna", "sub02001"], "White___Vray");
   }
-  assignMat("patela", "highlight");
-  updateTextObj("Text", 'patela');
-  tweenCamera('', "patela", 0.5);
+  assignMat("mandible", "highlight");
+  updateTextObj("Text", 'mandible');
+  updateTextObj("datails", 'Movement of the lower jaw opens and closes the mouth and also allows for the chewing of food');
 });
 
-registerOnClick("mandible", function() {
+registerOnClick("humerus", function() {
   var i_list10 = ["clavicle", "cranium", "femur", "fibula", "humerus", "mandible", "patela", "radius", "ribs", "scapula", "spine", "sternum", "tibia", "ulna", "sub02001"];
   for (var i_index10 in i_list10) {
     i = i_list10[i_index10];
   if (--_puzzleVars.loopTrap == 0) throw "Puzzles: infinite loop.";
     assignMat(["clavicle", "cranium", "femur", "fibula", "humerus", "mandible", "patela", "radius", "ribs", "scapula", "spine", "sternum", "tibia", "ulna", "sub02001"], "White___Vray");
   }
-  assignMat("mandible", "highlight");
-  updateTextObj("Text", 'mandible');
-  tweenCamera('', "mandible", 0.5);
+  assignMat("humerus", "highlight");
+  updateTextObj("Text", 'humerus');
+  updateTextObj("datails", 'the humerus is indeed very important in the proper functioning and movement of the entire arm');
 });
 
-registerOnClick("humerus", function() {
+registerOnClick("fibula", function() {
   var i_list11 = ["clavicle", "cranium", "femur", "fibula", "humerus", "mandible", "patela", "radius", "ribs", "scapula", "spine", "sternum", "tibia", "ulna", "sub02001"];
   for (var i_index11 in i_list11) {
     i = i_list11[i_index11];
   if (--_puzzleVars.loopTrap == 0) throw "Puzzles: infinite loop.";
     assignMat(["clavicle", "cranium", "femur", "fibula", "humerus", "mandible", "patela", "radius", "ribs", "scapula", "spine", "sternum", "tibia", "ulna", "sub02001"], "White___Vray");
   }
-  assignMat("humerus", "highlight");
-  updateTextObj("Text", 'humerus');
-  tweenCamera('', "humerus", 0.5);
+  assignMat("fibula", "highlight");
+  updateTextObj("Text", 'fibula');
+  updateTextObj("datails", 'plays a significant role in stabilizing the ankle and supporting the muscles of the lower leg');
 });
 
-registerOnClick("fibula", function() {
+registerOnClick("femur", function() {
   var i_list12 = ["clavicle", "cranium", "femur", "fibula", "humerus", "mandible", "patela", "radius", "ribs", "scapula", "spine", "sternum", "tibia", "ulna", "sub02001"];
   for (var i_index12 in i_list12) {
     i = i_list12[i_index12];
   if (--_puzzleVars.loopTrap == 0) throw "Puzzles: infinite loop.";
     assignMat(["clavicle", "cranium", "femur", "fibula", "humerus", "mandible", "patela", "radius", "ribs", "scapula", "spine", "sternum", "tibia", "ulna", "sub02001"], "White___Vray");
   }
-  assignMat("fibula", "highlight");
-  updateTextObj("Text", 'fibula');
-  tweenCamera('', "fibula", 0.5);
+  assignMat("femur", "highlight");
+  updateTextObj("Text", 'femur');
+  updateTextObj("datails", 'the strongest bone in the body');
 });
 
-registerOnClick("femur", function() {
+registerOnClick("cranium", function() {
   var i_list13 = ["clavicle", "cranium", "femur", "fibula", "humerus", "mandible", "patela", "radius", "ribs", "scapula", "spine", "sternum", "tibia", "ulna", "sub02001"];
   for (var i_index13 in i_list13) {
     i = i_list13[i_index13];
   if (--_puzzleVars.loopTrap == 0) throw "Puzzles: infinite loop.";
     assignMat(["clavicle", "cranium", "femur", "fibula", "humerus", "mandible", "patela", "radius", "ribs", "scapula", "spine", "sternum", "tibia", "ulna", "sub02001"], "White___Vray");
   }
-  assignMat("femur", "highlight");
-  updateTextObj("Text", 'femur');
-  tweenCamera('', "femur", 0.5);
+  assignMat("cranium", "highlight");
+  updateTextObj("Text", 'cranium');
+  updateTextObj("datails", 'supports facial structures and protects the brain');
 });
 
-registerOnClick("cranium", function() {
+registerOnClick("clavicle", function() {
   var i_list14 = ["clavicle", "cranium", "femur", "fibula", "humerus", "mandible", "patela", "radius", "ribs", "scapula", "spine", "sternum", "tibia", "ulna", "sub02001"];
   for (var i_index14 in i_list14) {
     i = i_list14[i_index14];
   if (--_puzzleVars.loopTrap == 0) throw "Puzzles: infinite loop.";
     assignMat(["clavicle", "cranium", "femur", "fibula", "humerus", "mandible", "patela", "radius", "ribs", "scapula", "spine", "sternum", "tibia", "ulna", "sub02001"], "White___Vray");
   }
-  assignMat("cranium", "highlight");
-  updateTextObj("Text", 'cranium');
-  tweenCamera('', "cranium", 0.5);
+  assignMat("clavicle", "highlight");
+  updateTextObj("Text", 'clavicle');
+  updateTextObj("datails", 'serves as a strut between the shoulder blade and the sternum');
 });
 
-registerOnClick("clavicle", function() {
+registerOnClick("sub02001", function() {
   var i_list15 = ["clavicle", "cranium", "femur", "fibula", "humerus", "mandible", "patela", "radius", "ribs", "scapula", "spine", "sternum", "tibia", "ulna", "sub02001"];
   for (var i_index15 in i_list15) {
     i = i_list15[i_index15];
   if (--_puzzleVars.loopTrap == 0) throw "Puzzles: infinite loop.";
     assignMat(["clavicle", "cranium", "femur", "fibula", "humerus", "mandible", "patela", "radius", "ribs", "scapula", "spine", "sternum", "tibia", "ulna", "sub02001"], "White___Vray");
   }
-  assignMat("clavicle", "highlight");
-  updateTextObj("Text", 'clavicle');
-  tweenCamera('', "clavicle", 0.5);
-});
-
-registerOnClick("sub02001", function() {
-  var i_list16 = ["clavicle", "cranium", "femur", "fibula", "humerus", "mandible", "patela", "radius", "ribs", "scapula", "spine", "sternum", "tibia", "ulna", "sub02001"];
-  for (var i_index16 in i_list16) {
-    i = i_list16[i_index16];
-  if (--_puzzleVars.loopTrap == 0) throw "Puzzles: infinite loop.";
-    assignMat(["clavicle", "cranium", "femur", "fibula", "humerus", "mandible", "patela", "radius", "ribs", "scapula", "spine", "sternum", "tibia", "ulna", "sub02001"], "White___Vray");
-  }
   assignMat("sub02001", "highlight");
   updateTextObj("Text", 'pelvis');
-  tweenCamera('', "sub02001", 0.5);
+  tweenCamera('', "sub02001", 1);
+  updateTextObj("datails", 'protects the delicate organs of the abdominopelvic cavity');
 });
 
 })();
