@@ -110,6 +110,20 @@ function registerOnClick(objNames, callback) {
    }
 }
 
+// tweenCamera block
+function tweenCamera(posObjName, targetObjName, duration) {
+   if (!targetObjName || v3dApp.controls.inTween)
+       return;
+   if (posObjName)
+       var posObj = v3dApp.scene.getObjectByName(posObjName);
+   else
+       var posObj = v3dApp.camera;
+   var targetObj = v3dApp.scene.getObjectByName(targetObjName);
+   if (!posObj || !targetObj)
+       return;
+   v3dApp.controls.tween(posObj.position, targetObj.position, duration);
+}
+
 // assignMaterial block
 function assignMat(objNames, matName) {
    if (!objNames || !matName)
@@ -130,6 +144,11 @@ function assignMat(objNames, matName) {
    }
 }
 
+// setTimeout block
+function registerTimeout(timeout, callback) {
+   window.setTimeout(callback, 1000 * timeout);
+}
+
 // updateTextObject block
 function updateTextObj(objNames, text) {
    if (!objNames) return;
@@ -145,20 +164,6 @@ function updateTextObj(objNames, text) {
    }
 }
 
-// tweenCamera block
-function tweenCamera(posObjName, targetObjName, duration) {
-   if (!targetObjName || v3dApp.controls.inTween)
-       return;
-   if (posObjName)
-       var posObj = v3dApp.scene.getObjectByName(posObjName);
-   else
-       var posObj = v3dApp.camera;
-   var targetObj = v3dApp.scene.getObjectByName(targetObjName);
-   if (!posObj || !targetObj)
-       return;
-   v3dApp.controls.tween(posObj.position, targetObj.position, duration);
-}
-
 
 registerOnClick("arrow", function() {
   operateAnimation("PLAY", "Empty", null, null, 1, function() {});
@@ -166,6 +171,11 @@ registerOnClick("arrow", function() {
 
 registerOnClick("STOP", function() {
   operateAnimation("STOP", "Empty", null, null, 1, function() {});
+});
+
+registerTimeout(0.01, function() {
+  tweenCamera('', "sub02001", 1);
+  assignMat("Text", "highlight");
 });
 
 registerOnClick("ulna", function() {
@@ -261,7 +271,7 @@ registerOnClick("patela", function() {
   }
   assignMat("patela", "highlight");
   updateTextObj("Text", 'patela');
-  updateTextObj("datails", 'increases the leverage that the tendon can exert on the femur by increasing the angle at which it acts.');
+  updateTextObj("datails", 'increases the leverage that the tendon can exert on the femur by increasing the angle at which it acts');
 });
 
 registerOnClick("mandible", function() {
@@ -345,8 +355,8 @@ registerOnClick("sub02001", function() {
   }
   assignMat("sub02001", "highlight");
   updateTextObj("Text", 'pelvis');
-  tweenCamera('', "sub02001", 1);
   updateTextObj("datails", 'protects the delicate organs of the abdominopelvic cavity');
+  tweenCamera('', "sub02001", 1);
 });
 
 })();
