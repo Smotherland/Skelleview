@@ -95,3 +95,17 @@ div.control_btn:hover {
     font-weight: 550;
     margin-bottom: auto;
 }
+.details{
+    position:relative;
+    width: 100%;
+    text-align: left;
+    
+    color: #ffbdbd;
+    display:block;
+}
+#header{
+    position:relative;
+    margin-left: 40%;
+    display:block;
+   
+}

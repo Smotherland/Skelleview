@@ -98,17 +98,23 @@ initObjectPicking(function(obj) {
    }
 });
 
+
+
 // whenClicked block
 function registerOnClick(objNames, callback) {
    if (!objNames) return;
    // input can be either single obj or array of objects
    if (typeof objNames == "string") objNames = [objNames];
    for (var i = 0; i < objNames.length; i++) {
-       var objName = objNames[i];
+       var objName = objNames[i];  
        if (!objName) continue;
        _puzzleVars.objClickCallbacks.push([objName, callback]);
    }
 }
+
+
+
+    
 
 // tweenCamera block
 function tweenCamera(posObjName, targetObjName, duration) {
@@ -163,8 +169,6 @@ function updateTextObj(objNames, text) {
        obj.geometry = obj.geometry.cloneWithText(text)
    }
 }
-
-
 registerOnClick("arrow", function() {
   operateAnimation("PLAY", "Empty", null, null, 1, function() {});
 });
@@ -185,6 +189,7 @@ registerOnClick("ulna", function() {
   if (--_puzzleVars.loopTrap == 0) throw "Puzzles: infinite loop.";
     assignMat(["clavicle", "cranium", "femur", "fibula", "humerus", "mandible", "patela", "radius", "ribs", "scapula", "spine", "sternum", "tibia", "ulna", "sub02001"], "White___Vray");
   }
+    
   assignMat("ulna", "highlight");
   updateTextObj("Text", 'ulna');
   updateTextObj("datails", 'together with the radius, the ulna enables the wrist joint to rotate');
@@ -323,6 +328,7 @@ registerOnClick("femur", function() {
 });
 
 registerOnClick("cranium", function() {
+  
   var i_list13 = ["clavicle", "cranium", "femur", "fibula", "humerus", "mandible", "patela", "radius", "ribs", "scapula", "spine", "sternum", "tibia", "ulna", "sub02001"];
   for (var i_index13 in i_list13) {
     i = i_list13[i_index13];
