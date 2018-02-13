@@ -83,7 +83,7 @@ div.control_btn:hover {
 
 #welcome {
     position: absolute;
-    top: 700px;
+    top: 70%;
     width: 100%;
     text-align: center;
     z-index: 100;
@@ -99,7 +99,6 @@ div.control_btn:hover {
     position:relative;
     width: 100%;
     text-align: left;
-    
     color: #ffbdbd;
     display:block;
 }
