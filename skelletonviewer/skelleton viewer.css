@@ -83,12 +83,15 @@ div.control_btn:hover {
 
 #welcome {
     position: absolute;
-    top: 70%;
-    width: 100%;
+    top: 65%;
+    width:40%;
     text-align: center;
     z-index: 100;
     color: #ffbdbd;
     display:block;
+    font-family: 'Quicksand', 'Arial',sans-serif;
+    margin-left: 30%;
+   
 }
 #title {
     font-size: 300%;
